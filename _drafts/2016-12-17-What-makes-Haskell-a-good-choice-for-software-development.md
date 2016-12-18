@@ -15,4 +15,8 @@ Ok. you want an example? Here it is:
     
 {% highlight haskell linenos %}
 intSort :: [Int] -> [Int]
+intSort []       = []
+intSort (i:rest) = [x | x <- rest, x < i]
+                 ++[i]
+                 ++
 {% endhighlight %}
